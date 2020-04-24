@@ -34,4 +34,52 @@ MAINTAINER
 #ENV DEBIAN_FRONTEND noninteractive
 
 USER root
-RUN dnf update && \
+RUN dnf update -y && \
+dnf install -y  wget 
+vim 
+yara 
+make
+python-pip 
+python-zmq 
+python-devel 
+gcc 
+perl-devel 
+unzip 
+ssdeep 
+jq 
+java 
+openssl-devel 
+ssdeep-devel 
+libffi-devel 
+autoconf 
+automake 
+libtool 
+ssdeep-devel 
+ssdeep-libs 
+swig
+m2crypto
+htop 
+
+
+# Python pip section 
+pip install --upgrade pip
+pip install --upgrade setuptools
+
+
+pip install gevent 
+	interruptingcow 
+yara-python 
+cffi 
+six 
+IPy 
+fluent-logger 
+javatools==1.3 
+olefile 
+pylzma 
+pyclamd
+pexpect 
+ssdeep 
+redis 
+oletools 
+pyasn1
+
